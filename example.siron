@@ -1,0 +1,27 @@
+* This is a block comment in Siron %
+
+* Example Siron Program %
+beginn-benutze
+    benutze datei als adatei1
+    
+    * Main loop %
+    schleife fuer satz von datei
+        falls zeichen eq 'test' dann
+            drucke zeile
+            ergaenze tabelle mit konstant
+        sofern zeichen ne 'other' dann
+            aendere zeichen auf 'new'
+        sonst
+            schreibe satz
+        ende
+    ende-schleife
+    
+    commit
+    stop
+ende-benutze
+
+* Another example with operators %
+lies datei1
+merke anfangswert = 100
+wechsel tabelle(1, 2)
+nimm xml vom protokoll

@@ -1,0 +1,100 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Siron",
+  "scopeName": "source.siron",
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#keywords-control"
+    },
+    {
+      "include": "#keywords-main"
+    },
+    {
+      "include": "#keywords-secondary"
+    },
+    {
+      "include": "#operators"
+    },
+    {
+      "include": "#numbers"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.block.siron",
+          "begin": "\\*",
+          "end": "%",
+          "patterns": [
+            {
+              "name": "constant.character.escape.siron",
+              "match": "\\\\."
+            }
+          ]
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.single.siron",
+          "begin": "'",
+          "end": "'",
+          "patterns": [
+            {
+              "name": "constant.character.escape.siron",
+              "match": "\\\\."
+            }
+          ]
+        }
+      ]
+    },
+    "keywords-control": {
+      "patterns": [
+        {
+          "name": "keyword.control.siron",
+          "match": "(?i)\\b(abbruch|benutze-bloecke|ende|endverarbeitung|hole|modul|sort|stop|beginn-benutze|schleife|ende-benutze|ende-schleife)\\b"
+        }
+      ]
+    },
+    "keywords-main": {
+      "patterns": [
+        {
+          "name": "keyword.other.siron",
+          "match": "(?i)\\b(aendere|benutze|commit|dann|drucke|ende-gw|ergaenze|falls|gzeiger|ident|lies|liste|merke|mische|nimm|schreibe|sofern|sonst|tabelle|wechsel|wenn)\\b"
+        }
+      ]
+    },
+    "keywords-secondary": {
+      "patterns": [
+        {
+          "name": "keyword.other.secondary.siron",
+          "match": "(?i)\\b(abfrage|adatei1|adatei3|adatei4|adatei5|adatei6|als|anfangswert|auf|bei|datei|eq|fuer|ge|gt|kein|konstant|kopf|le|listpara|lt|mit|ne|neu|oder|ohne|protokoll|ram-i|ram-s|satz|ueber|und|vom|von|xml|zeichen|zeile)\\b"
+        }
+      ]
+    },
+    "operators": {
+      "patterns": [
+        {
+          "name": "keyword.operator.siron",
+          "match": "[(),=]"
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.siron",
+          "match": "\\b\\d+(\\.\\d+)?\\b"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "siron-syntax",
+  "displayName": "Siron Syntax Highlighting",
+  "description": "Syntax highlighting for Siron programming language files (.siron) with support for dark themes",
+  "version": "1.0.0",
+  "publisher": "guenzd",
+  "author": "Daniel Günzel",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guenzd/siron-syntax"
+  },
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "siron",
+    "syntax",
+    "highlighting",
+    "language"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "siron",
+        "aliases": [
+          "Siron",
+          "siron"
+        ],
+        "extensions": [
+          ".siron"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "siron",
+        "scopeName": "source.siron",
+        "path": "./syntaxes/siron.tmLanguage.json"
+      }
+    ]
+  }
+}
