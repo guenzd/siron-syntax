@@ -1,0 +1,5 @@
+notepadpp_siron_highlighting.xml
+.vscode/
+siron-syntax-*.vsix
+*.vsix
+.DS_Store

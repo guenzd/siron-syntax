@@ -30,10 +30,6 @@ This extension provides syntax highlighting for Siron programming language files
 - **Strings**: Single-quoted strings
 - **Operators**: `(`, `)`, `,`, `=`
 
-## Source
-
-Converted from Notepad++ User Defined Language XML.
-
 ## License
 
 MIT

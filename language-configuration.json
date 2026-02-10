@@ -1,6 +1,7 @@
 {
   "comments": {
-    "blockComment": ["*", "%"]
+    "lineComment": "*%",
+    "blockComment": ["*/", "*/"]
   },
   "brackets": [
     ["(", ")"]
@@ -18,5 +19,9 @@
       "start": "^\\s*(beginn-benutze|schleife)\\b",
       "end": "^\\s*(ende-benutze|ende-schleife)\\b"
     }
+  },
+  "indentationRules": {
+    "increaseIndentPattern": "(?i)^\\s*(beginn-benutze|schleife|falls|wenn)\\b.*$",
+    "decreaseIndentPattern": "(?i)^\\s*(ende-benutze|ende-schleife|sonst)\\b.*$"
   }
 }

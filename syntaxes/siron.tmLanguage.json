@@ -29,15 +29,13 @@
     "comments": {
       "patterns": [
         {
+          "name": "comment.line.siron",
+          "match": "\\*%.*$"
+        },
+        {
           "name": "comment.block.siron",
-          "begin": "\\*",
-          "end": "%",
-          "patterns": [
-            {
-              "name": "constant.character.escape.siron",
-              "match": "\\\\."
-            }
-          ]
+          "begin": "\\*/",
+          "end": "\\*/"
         }
       ]
     },
