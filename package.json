@@ -2,7 +2,7 @@
   "name": "siron-syntax",
   "displayName": "Siron Syntax Extension",
   "description": "Syntax highlighting for Siron programming language files (.siron) with support for dark themes",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "guenzd",
   "author": "Daniel Günzel",
   "license": "MIT",

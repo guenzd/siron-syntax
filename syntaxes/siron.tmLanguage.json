@@ -30,12 +30,15 @@
       "patterns": [
         {
           "name": "comment.line.siron",
-          "match": "\\*%.*$"
+          "begin": "\\*%",
+          "end": "$",
+          "contentName": "comment.line.siron"
         },
         {
           "name": "comment.block.siron",
           "begin": "\\*/",
-          "end": "\\*/"
+          "end": "\\*/",
+          "contentName": "comment.block.siron"
         }
       ]
     },
@@ -58,7 +61,7 @@
       "patterns": [
         {
           "name": "keyword.control.siron",
-          "match": "(?i)\\b(abbruch|benutze-bloecke|ende|endverarbeitung|hole|modul|sort|stop|beginn-benutze|schleife|ende-benutze|ende-schleife)\\b"
+          "match": "(?i)\\b(abbruch|benutze-bloecke|endverarbeitung|hole|modul|sort|stop|beginn-benutze|schleife|ende-benutze|ende-schleife|ende(?!-))\\b"
         }
       ]
     },
@@ -66,7 +69,7 @@
       "patterns": [
         {
           "name": "keyword.other.siron",
-          "match": "(?i)\\b(aendere|benutze|commit|dann|drucke|ende-gw|ergaenze|falls|gzeiger|ident|lies|liste|merke|mische|nimm|schreibe|sofern|sonst|tabelle|wechsel|wenn)\\b"
+          "match": "(?i)\\b(aendere|benutze|commit|dann|drucke|ende-gw|ende-wenn|ergaenze|falls|gzeiger|ident|lies|liste|merke|mische|nimm|schreibe|sofern|sonst|tabelle|wechsel|wenn)\\b"
         }
       ]
     },
